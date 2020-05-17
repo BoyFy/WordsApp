@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pers.remwords">
+
+    <application
+        android:name=".entity.Data"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.ReciteWords"
+            android:label="已背诵单词"/>
+        <activity
+            android:name=".activity.ShowWords"
+            android:label="查看单词" />
+        <activity
+            android:name=".activity.ChangeWords"
+            android:label="修改单词" />
+        <activity
+            android:name=".activity.RegistActivity"
+            android:label="注册" />
+        <activity
+            android:name=".activity.AddWords"
+            android:label="添加单词" />
+        <activity
+            android:name=".activity.index"
+            android:label="201720513李鹏飞" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

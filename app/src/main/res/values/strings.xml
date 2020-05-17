@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">我爱记单词</string>
+    <string name="uname_hint">输入用户名</string>
+    <string name="psd_hint">输入密码</string>
+    <string name="checkBox">记住账号</string>
+    <string name="version">20172051李鹏飞</string>
+    <string name="title">我爱记单词</string>
+    <string name="loginphoto">loginphoto</string>
+    <string name="login_btn">登录</string>
+    <string name="register_btn">注册</string>
+    <string name="ensure_btn">确定</string>
+    <string name="means">请输入单词意思</string>
+    <string name="word">请输入单词</string>
+    <string name="tips">备注</string>
+    <string name="psd_aga">请再次输入密码</string>
+    <string name="remb_btn">已记住</string>
+    <item name="white" type="color">@android:color/white</item>
+</resources>

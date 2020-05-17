@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegistActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobar_rgst"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/uname_rgst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/uname_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/psd_rgst"
+        app:layout_constraintEnd_toEndOf="@+id/psd_rgst"
+        app:layout_constraintStart_toStartOf="@+id/psd_rgst"
+        app:layout_constraintTop_toBottomOf="@id/guideline12"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/psd_rgst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/psd_hint"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/psd_ensure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uname_rgst" />
+
+    <EditText
+        android:id="@+id/psd_ensure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/psd_aga"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/guideline16"
+        app:layout_constraintEnd_toEndOf="@+id/uname_rgst"
+        app:layout_constraintStart_toStartOf="@+id/uname_rgst"
+        app:layout_constraintTop_toBottomOf="@+id/psd_rgst" />
+
+    <Button
+        android:id="@+id/ensurebtn_rgst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ensure_btn"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1121751" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

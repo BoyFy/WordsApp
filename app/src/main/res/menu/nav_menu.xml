@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/recite"
+            android:icon="@drawable/ic_recite"
+            android:title="已背诵单词"/>
+        <item
+            android:id="@+id/aboutme"
+            android:icon="@drawable/ic_aboutme"
+            android:title="关于项目"/>
+        <item
+            android:id="@+id/finishing"
+            android:icon="@drawable/ic_finishing"
+            android:title="退出"/>
+    </group>
+
+</menu>
