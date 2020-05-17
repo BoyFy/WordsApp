@@ -1,9 +1,7 @@
 package com.pers.remwords.base;
 
 import android.app.Activity;
-import android.os.Build;
 import android.util.Log;
-import android.view.WindowManager;
 
 import java.util.ArrayList;
 import java.util.List;

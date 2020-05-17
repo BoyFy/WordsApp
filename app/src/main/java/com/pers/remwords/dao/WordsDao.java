@@ -6,16 +6,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import com.pers.remwords.activity.MainActivity;
-import com.pers.remwords.activity.RegistActivity;
 import com.pers.remwords.database.Dbhelper;
 import com.pers.remwords.database.UsersDbHelper;
-import com.pers.remwords.entity.Data;
 import com.pers.remwords.entity.Users;
 import com.pers.remwords.entity.Words;
-import com.pers.remwords.utils.Json;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,14 +28,6 @@ public class WordsDao {
         this.context = context;
 
     }
-
-//    public void addToList() {
-//        String jsonData = Json.getJson("Words.json", context);
-//        Gson gson = new Gson();
-//        listWord = gson.fromJson(jsonData, new TypeToken<List<Words>>() {
-//        }.getType());
-//
-//    }
 
     public void insertDb(Words words, String tablename) {
         dbhelper = new Dbhelper(context, tablename + "Words.db", null, 1);

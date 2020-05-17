@@ -33,9 +33,6 @@ public class Dbhelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-//        db.execSQL("drop table if exists Words");
-//        db.execSQL("drop table if exists CREATE_USERS");
-//        onCreate(db);
 
     }
 

@@ -1,10 +1,8 @@
 package com.pers.remwords.activity;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,13 +13,8 @@ import android.widget.EditText;
 import androidx.appcompat.app.AlertDialog;
 
 import com.pers.remwords.R;
-import com.pers.remwords.activity.index;
 import com.pers.remwords.base.BaseActivity;
 import com.pers.remwords.dao.WordsDao;
-import com.pers.remwords.entity.Users;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     private Button login;

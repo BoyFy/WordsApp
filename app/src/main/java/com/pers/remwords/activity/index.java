@@ -4,14 +4,10 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,17 +23,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.pers.remwords.R;
 import com.pers.remwords.adapter.WordsAdapter;
 import com.pers.remwords.base.ActivityCollect;
 import com.pers.remwords.base.BaseActivity;
 import com.pers.remwords.dao.WordsDao;
-import com.pers.remwords.database.Dbhelper;
 import com.pers.remwords.entity.Data;
 import com.pers.remwords.entity.Words;
-import com.pers.remwords.utils.Json;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -182,13 +174,6 @@ public class index extends BaseActivity{
         });
     }
 
-    //    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.toolbar,menu);
-//        return true;
-//    }
-//
-
     @Override
     protected void onStart() {
         super.onStart();
@@ -199,9 +184,6 @@ public class index extends BaseActivity{
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-//            case R.id.finishing:
-//                Toast.makeText(this,"hello",Toast.LENGTH_SHORT).show();
-//                break;
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 break;

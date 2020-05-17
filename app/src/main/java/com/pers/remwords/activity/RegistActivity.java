@@ -1,29 +1,20 @@
 package com.pers.remwords.activity;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.app.Dialog;
 import android.content.DialogInterface;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.pers.remwords.R;
 import com.pers.remwords.dao.WordsDao;
-import com.pers.remwords.database.Dbhelper;
-import com.pers.remwords.database.UsersDbHelper;
 import com.pers.remwords.entity.Users;
-import com.pers.remwords.entity.Words;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class RegistActivity extends AppCompatActivity implements View.OnClickListener {
     private Button ensurebtn;
