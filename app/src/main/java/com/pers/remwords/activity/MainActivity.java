@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AlertDialog;
@@ -15,13 +16,15 @@ import androidx.appcompat.app.AlertDialog;
 import com.pers.remwords.R;
 import com.pers.remwords.base.BaseActivity;
 import com.pers.remwords.dao.WordsDao;
+import com.pers.remwords.entity.Users;
+import com.pers.remwords.savename.FileSave;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     private Button login;
     private Button register;
     private EditText uname;
     private EditText psd;
-
+    private CheckBox rembPass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +32,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         initview();
         login.setOnClickListener(this);
         register.setOnClickListener(this);
-
+        Users users=FileSave.loadUsers(this);
+        if (users!=null){
+            uname.setText(users.getUname());
+            psd.setText(users.getPsd());
+        }
     }
 
     private void initview(){
@@ -37,6 +44,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         register=(Button)findViewById(R.id.register);
         uname=(EditText)findViewById(R.id.uname);
         psd=(EditText)findViewById(R.id.psd);
+        rembPass=(CheckBox)findViewById(R.id.checkBox);
     }
 
     private Boolean checkUsers() {
@@ -89,6 +97,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         switch (v.getId()){
             case R.id.login:
                 if (checkUsers()) {
+                    if (rembPass.isChecked()){
+                        FileSave.saveUserInfo(this,uname.getText().toString(), psd.getText().toString());
+                    }
                     Intent intent = new Intent(this, index.class);
                     intent.putExtra("uanme", uname.getText().toString());
                     startActivity(intent);

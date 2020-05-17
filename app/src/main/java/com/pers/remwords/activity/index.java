@@ -140,7 +140,6 @@ public class index extends BaseActivity{
                 intent.putExtra("showword",words.getWord());
                 intent.putExtra("showmean",words.getMeans());
                 startActivity(intent);
-                Toast.makeText(getBaseContext(), "点击的是" + position + "的itemClick", Toast.LENGTH_SHORT).show();
             }
         });
         //长按事件
