@@ -51,14 +51,14 @@ public class ReciteWords extends AppCompatActivity {
         wordsAdapter.setOnItemClickListener(new WordsAdapter.OnItemClickListener() {
             @Override
             public void onClick(int position, Words words) {
-                Toast.makeText(getBaseContext(), "点击的是" + position + "的itemClick", Toast.LENGTH_SHORT).show();
+
             }
         });
         //长按事件
         wordsAdapter.setOnItemLongClickListener(new WordsAdapter.OnItemLongClickListener() {
             @Override
             public void onLongClick(View view, final int position, final Words words) {
-                Toast.makeText(getBaseContext(), "点击的是" + position + "的itemClick", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
