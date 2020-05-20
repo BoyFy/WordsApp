@@ -9,11 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.pers.remwords.R;
+import com.pers.remwords.base.BaseActivity;
 import com.pers.remwords.dao.WordsDao;
 import com.pers.remwords.entity.Data;
 import com.pers.remwords.entity.Words;
 
-public class ShowWords extends AppCompatActivity {
+public class ShowWords extends BaseActivity {
 
     private TextView showword;
     private TextView showmean;

@@ -13,10 +13,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.pers.remwords.R;
+import com.pers.remwords.base.BaseActivity;
 import com.pers.remwords.dao.WordsDao;
 import com.pers.remwords.entity.Users;
 
-public class RegistActivity extends AppCompatActivity implements View.OnClickListener {
+public class RegistActivity extends BaseActivity implements View.OnClickListener {
     private Button ensurebtn;
     private EditText uname;
     private EditText psd;

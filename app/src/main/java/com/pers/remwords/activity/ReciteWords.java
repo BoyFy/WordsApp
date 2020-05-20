@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.pers.remwords.R;
 import com.pers.remwords.adapter.WordsAdapter;
+import com.pers.remwords.base.BaseActivity;
 import com.pers.remwords.dao.WordsDao;
 import com.pers.remwords.entity.Data;
 import com.pers.remwords.entity.Words;
@@ -18,7 +19,7 @@ import com.pers.remwords.entity.Words;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReciteWords extends AppCompatActivity {
+public class ReciteWords extends BaseActivity {
     private List<Words> wordsList = new ArrayList<>();
     private WordsAdapter wordsAdapter;
     private RecyclerView recyclerView;

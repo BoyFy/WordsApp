@@ -10,8 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.pers.remwords.R;
+import com.pers.remwords.base.BaseActivity;
 
-public class ChangeWords extends AppCompatActivity {
+public class ChangeWords extends BaseActivity {
 
     private EditText iptWord;
     private EditText iptmean;
